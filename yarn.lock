@@ -1391,6 +1391,15 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.3.tgz#e45e384e4b8ec16bce2fd903af78450f6bf7ec98"
   integrity sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==
 
+"@joshwooding/vite-plugin-react-docgen-typescript@0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@joshwooding/vite-plugin-react-docgen-typescript/-/vite-plugin-react-docgen-typescript-0.6.0.tgz#4aafc15e2e13e918b52626e9fe21f1e79c75a30e"
+  integrity sha512-dPo6SE4dm8UKcgGg4LsV9iw6f5HkIeJwzMA2M2Lb+mhl5vxesbDvb3ENTzNTkGnOxS6PqJig2pfXdtYaW3S9fg==
+  dependencies:
+    glob "^10.0.0"
+    magic-string "^0.30.0"
+    react-docgen-typescript "^2.2.2"
+
 "@jridgewell/gen-mapping@^0.3.5":
   version "0.3.8"
   resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.3.8.tgz#4f0e06362e01362f823d348f1872b08f666d8142"
@@ -1440,7 +1449,7 @@
     "@emnapi/runtime" "^1.4.3"
     "@tybys/wasm-util" "^0.9.0"
 
-"@next/env@15.3.3":
+"@next/env@15.3.3", "@next/env@^15.0.3":
   version "15.3.3"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-15.3.3.tgz#8c5548756df93efff1bf4bb4e9e430a763978155"
   integrity sha512-OdiMrzCl2Xi0VTjiQQUK0Xh7bJHnOuET2s+3V+Y40WJBAXrJeGA3f+I8MZJ/YQ3mVGi5XGR1L66oFlgqXhQ4Vw==
@@ -1793,6 +1802,15 @@
   resolved "https://registry.yarnpkg.com/@radix-ui/rect/-/rect-1.1.1.tgz#78244efe12930c56fd255d7923865857c41ac8cb"
   integrity sha512-HPwpGIzkl28mWyZqG52jiqDJ12waP11Pa1lGoiyUkIEuMLBP0oeK/C89esbXrxsky5we7dfd8U58nm0SgAWpVw==
 
+"@rollup/pluginutils@^5.0.2":
+  version "5.1.4"
+  resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-5.1.4.tgz#bb94f1f9eaaac944da237767cdfee6c5b2262d4a"
+  integrity sha512-USm05zrsFxYLPdWWq+K3STlWiT/3ELn3RcV5hJMghpeAIhxfsUIg6mt12CBJBInWMV4VneoV7SfGv8xIwo2qNQ==
+  dependencies:
+    "@types/estree" "^1.0.0"
+    estree-walker "^2.0.2"
+    picomatch "^4.0.2"
+
 "@rollup/rollup-android-arm-eabi@4.43.0":
   version "4.43.0"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.43.0.tgz#9241b59af721beb7e3587a56c6c245d6c465753d"
@@ -1908,6 +1926,14 @@
   resolved "https://registry.yarnpkg.com/@schummar/icu-type-parser/-/icu-type-parser-1.21.5.tgz#75989085bbbf80ee325874a0137437bde77e9baf"
   integrity sha512-bXHSaW5jRTmke9Vd0h5P7BtWZG9Znqb8gSDxZnxaGSJnGwPLDPfS+3g0BKzeWqzgZPsIVZkM7m2tbo18cm5HBw==
 
+"@storybook/builder-vite@9.0.11":
+  version "9.0.11"
+  resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-9.0.11.tgz#17c56b65d135e85ae49653b45fc554e9d896b52c"
+  integrity sha512-S/Kg+afUue7/bmPBKoeQcozIr/L+bhnpo1eBJ5l9EIGL1adqmbUq4eOsd16C+tZMUiOuxs+eND52QtnEg+MDyg==
+  dependencies:
+    "@storybook/csf-plugin" "9.0.11"
+    ts-dedent "^2.0.0"
+
 "@storybook/builder-webpack5@9.0.11":
   version "9.0.11"
   resolved "https://registry.yarnpkg.com/@storybook/builder-webpack5/-/builder-webpack5-9.0.11.tgz#ac80a4a94b432b8954f8b790510f2631bb3231a5"
@@ -1936,10 +1962,28 @@
   dependencies:
     ts-dedent "^2.0.0"
 
+"@storybook/csf-plugin@9.0.11":
+  version "9.0.11"
+  resolved "https://registry.yarnpkg.com/@storybook/csf-plugin/-/csf-plugin-9.0.11.tgz#a2311d16e0e4a900d3ecc6b6ea7e8d7287abbde5"
+  integrity sha512-uJc8ovkAjUbBT5zLPPubBBEIpYOFG5zY5yDbgunq3ZrhWJl3axBe3mHJJ7RH4FtgKw3gKpn7Z5vNqWpMuL5Tbw==
+  dependencies:
+    unplugin "^1.3.1"
+
 "@storybook/global@^5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@storybook/global/-/global-5.0.0.tgz#b793d34b94f572c1d7d9e0f44fac4e0dbc9572ed"
   integrity sha512-FcOqPAXACP0I3oJ/ws6/rrPT9WGhu915Cg8D02a9YxLo0DE9zI+a9A5gRGvmQ09fiWPukqI8ZAEoQEdWUKMQdQ==
+
+"@storybook/nextjs-vite@^9.0.11":
+  version "9.0.11"
+  resolved "https://registry.yarnpkg.com/@storybook/nextjs-vite/-/nextjs-vite-9.0.11.tgz#bdb97188815c9642fd106f28235fee86537e75e6"
+  integrity sha512-dXSHTt8TeyNwqpJEDAjwOLWziTfga+0deJT6T8/wTh0wuCJaY+LdmL2l7bvL38qwYtRt9QI+T5syKxGCRHGGvg==
+  dependencies:
+    "@storybook/builder-vite" "9.0.11"
+    "@storybook/react" "9.0.11"
+    "@storybook/react-vite" "9.0.11"
+    styled-jsx "5.1.6"
+    vite-plugin-storybook-nextjs "2.0.2"
 
 "@storybook/nextjs@^9.0.11":
   version "9.0.11"
@@ -2013,6 +2057,21 @@
   version "9.0.11"
   resolved "https://registry.yarnpkg.com/@storybook/react-dom-shim/-/react-dom-shim-9.0.11.tgz#8f31fb68e2efcde50ae470e20032115266212b5d"
   integrity sha512-sfuJgQ7zXe8Yak3eiAJwTM+0T1whmvFlpalj1CNpsBVjxESUItgqI8U6Zf1viTe5Z6xR9lgyqxcnCRpSdS02Mg==
+
+"@storybook/react-vite@9.0.11":
+  version "9.0.11"
+  resolved "https://registry.yarnpkg.com/@storybook/react-vite/-/react-vite-9.0.11.tgz#0a091d4a91ad425b41eac4d141cc84ecebcb35f9"
+  integrity sha512-sGlavYg6nraN6mROsI37gPYjFCv156F6VnyGH8lUktfZBn5WtdPPMNURH1XPFbTGIGj60huuOxjq+UOWbbjZWg==
+  dependencies:
+    "@joshwooding/vite-plugin-react-docgen-typescript" "0.6.0"
+    "@rollup/pluginutils" "^5.0.2"
+    "@storybook/builder-vite" "9.0.11"
+    "@storybook/react" "9.0.11"
+    find-up "^5.0.0"
+    magic-string "^0.30.0"
+    react-docgen "^8.0.0"
+    resolve "^1.22.8"
+    tsconfig-paths "^4.2.0"
 
 "@storybook/react@9.0.11":
   version "9.0.11"
@@ -4548,6 +4607,11 @@ estraverse@^5.1.0, estraverse@^5.2.0, estraverse@^5.3.0:
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-5.3.0.tgz#2eea5290702f26ab8fe5370370ff86c965d21123"
   integrity sha512-MMdARuVEQziNTeJD8DgMqmhwR11BRQ/cBP+pLtYdSTnf3MIO8fFeiINEbX36ZdNlfU/7A9f3gUw49B3oQsvwBA==
 
+estree-walker@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-2.0.2.tgz#52f010178c2a4c117a7757cfe942adb7d2da4cac"
+  integrity sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==
+
 estree-walker@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-3.0.3.tgz#67c3e549ec402a487b4fc193d1953a524752340d"
@@ -4877,7 +4941,7 @@ glob-to-regexp@^0.4.1:
   resolved "https://registry.yarnpkg.com/glob-to-regexp/-/glob-to-regexp-0.4.1.tgz#c75297087c851b9a578bd217dd59a92f59fe546e"
   integrity sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==
 
-glob@^10.4.1:
+glob@^10.0.0, glob@^10.4.1:
   version "10.4.5"
   resolved "https://registry.yarnpkg.com/glob/-/glob-10.4.5.tgz#f4d9f0b90ffdbab09c9d77f5f29b4262517b0956"
   integrity sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==
@@ -4918,6 +4982,11 @@ globalthis@^1.0.4:
   dependencies:
     define-properties "^1.2.1"
     gopd "^1.0.1"
+
+globrex@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/globrex/-/globrex-0.1.2.tgz#dd5d9ec826232730cd6793a5e33a9302985e6098"
+  integrity sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==
 
 gopd@^1.0.1, gopd@^1.2.0:
   version "1.2.0"
@@ -5085,7 +5154,7 @@ ignore@^7.0.0:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-7.0.5.tgz#4cb5f6cd7d4c7ab0365738c7aea888baa6d7efd9"
   integrity sha512-Hs59xBNfUIunMFgWAbGX5cq6893IbWg4KnrjbYwX3tx0ztorVgTDA6B2sxf8ejHJ4wz8BqGUMYlnzNBer5NvGg==
 
-image-size@^2.0.2:
+image-size@^2.0.0, image-size@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/image-size/-/image-size-2.0.2.tgz#84a7b43704db5736f364bf0d1b029821299b4bdc"
   integrity sha512-IRqXKlaXwgSMAMtpNzZa1ZAe8m+Sa1770Dhk8VkSsP9LS+iHD62Zd8FQKs8fbPiagBE7BzoFX23cxFnwshpV6w==
@@ -5749,7 +5818,7 @@ lz-string@^1.5.0:
   resolved "https://registry.yarnpkg.com/lz-string/-/lz-string-1.5.0.tgz#c1ab50f77887b712621201ba9fd4e3a6ed099941"
   integrity sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==
 
-magic-string@^0.30.17, magic-string@^0.30.5:
+magic-string@^0.30.0, magic-string@^0.30.11, magic-string@^0.30.17, magic-string@^0.30.5:
   version "0.30.17"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.17.tgz#450a449673d2460e5bbcfba9a61916a1714c7453"
   integrity sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==
@@ -5898,6 +5967,11 @@ mkdirp@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-3.0.1.tgz#e44e4c5607fb279c168241713cc6e0fea9adcb50"
   integrity sha512-+NsyUUAZDmo6YVHzL/stxSu3t9YS1iljliy3BSDrXJ/dkn1KYdmtZODGGjLcc9XLgVVpH4KshHB8XmZgMhaBXg==
+
+module-alias@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/module-alias/-/module-alias-2.2.3.tgz#ec2e85c68973bda6ab71ce7c93b763ec96053221"
+  integrity sha512-23g5BFj4zdQL/b6tor7Ji+QY4pEfNH784BMslY9Qb0UnJWRAt+lQGLYmRaM0KDBwIG23ffEBELhZDP2rhi9f/Q==
 
 mrmime@^2.0.0:
   version "2.0.1"
@@ -6566,6 +6640,22 @@ react-docgen@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/react-docgen/-/react-docgen-7.1.1.tgz#a7a8e6b923a945acf0b7325a889ddd74fec74a63"
   integrity sha512-hlSJDQ2synMPKFZOsKo9Hi8WWZTC7POR8EmWvTSjow+VDgKzkmjQvFm2fk0tmRw+f0vTOIYKlarR0iL4996pdg==
+  dependencies:
+    "@babel/core" "^7.18.9"
+    "@babel/traverse" "^7.18.9"
+    "@babel/types" "^7.18.9"
+    "@types/babel__core" "^7.18.0"
+    "@types/babel__traverse" "^7.18.0"
+    "@types/doctrine" "^0.0.9"
+    "@types/resolve" "^1.20.2"
+    doctrine "^3.0.0"
+    resolve "^1.22.1"
+    strip-indent "^4.0.0"
+
+react-docgen@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/react-docgen/-/react-docgen-8.0.0.tgz#66b6f750fcba1d1576614ad0ec74204a75fa76c3"
+  integrity sha512-kmob/FOTwep7DUWf9KjuenKX0vyvChr3oTdvvPt09V60Iz75FJp+T/0ZeHMbAfJj2WaVWqAPP5Hmm3PYzSPPKg==
   dependencies:
     "@babel/core" "^7.18.9"
     "@babel/traverse" "^7.18.9"
@@ -7553,10 +7643,15 @@ ts-api-utils@^2.1.0:
   resolved "https://registry.yarnpkg.com/ts-api-utils/-/ts-api-utils-2.1.0.tgz#595f7094e46eed364c13fd23e75f9513d29baf91"
   integrity sha512-CUgTZL1irw8u29bzrOD/nH85jqyc74D6SshFgujOIA7osm2Rz7dYH77agkx7H4FBNxDq7Cjf+IjaX/8zwFW+ZQ==
 
-ts-dedent@^2.0.0:
+ts-dedent@^2.0.0, ts-dedent@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/ts-dedent/-/ts-dedent-2.2.0.tgz#39e4bd297cd036292ae2394eb3412be63f563bb5"
   integrity sha512-q5W7tVM71e2xjHZTlgfTDoPF/SmqKG5hddq9SzR49CH2hayqRKJtQ4mtRlSxKaJlR/+9rEM+mnBHf7I2/BQcpQ==
+
+tsconfck@^3.0.3:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/tsconfck/-/tsconfck-3.1.6.tgz#da1f0b10d82237ac23422374b3fce1edb23c3ead"
+  integrity sha512-ks6Vjr/jEw0P1gmOVwutM3B7fWxoWBL2KRDb1JfqGVawBmO5UsvmWOQFGHBPl5yxYz4eERr19E6L7NMv+Fej4w==
 
 tsconfig-paths-webpack-plugin@^4.0.1:
   version "4.2.0"
@@ -7712,6 +7807,14 @@ universalify@^2.0.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.1.tgz#168efc2180964e6386d061e094df61afe239b18d"
   integrity sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==
 
+unplugin@^1.3.1:
+  version "1.16.1"
+  resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-1.16.1.tgz#a844d2e3c3b14a4ac2945c42be80409321b61199"
+  integrity sha512-4/u/j4FrCKdi17jaxuJA0jClGxB1AvU2hw/IuayPc4ay1XGaJs/rbb4v5WKwAjNifjmXK9PIFyuPiaK8azyR9w==
+  dependencies:
+    acorn "^8.14.0"
+    webpack-virtual-modules "^0.6.2"
+
 unrs-resolver@^1.6.2:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/unrs-resolver/-/unrs-resolver-1.9.0.tgz#22877e2e0f1ba3f848f75f7be5ecb81b634066dc"
@@ -7818,6 +7921,27 @@ vite-node@3.2.3:
     pathe "^2.0.3"
     vite "^5.0.0 || ^6.0.0 || ^7.0.0-0"
 
+vite-plugin-storybook-nextjs@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/vite-plugin-storybook-nextjs/-/vite-plugin-storybook-nextjs-2.0.2.tgz#6c1b96e66b4046b1e0d6b02e8d694128dea97abb"
+  integrity sha512-jUTQT4C0oEGKhJNcG8tMI9l6eky0WuGmtWbLLkQ5yx0yTBvnPJ4saPODeYfe+j/a7hF/7USbCALCcSvMzlCLqA==
+  dependencies:
+    "@next/env" "^15.0.3"
+    image-size "^2.0.0"
+    magic-string "^0.30.11"
+    module-alias "^2.2.3"
+    ts-dedent "^2.2.0"
+    vite-tsconfig-paths "^5.1.4"
+
+vite-tsconfig-paths@^5.1.4:
+  version "5.1.4"
+  resolved "https://registry.yarnpkg.com/vite-tsconfig-paths/-/vite-tsconfig-paths-5.1.4.tgz#d9a71106a7ff2c1c840c6f1708042f76a9212ed4"
+  integrity sha512-cYj0LRuLV2c2sMqhqhGpaO3LretdtMn/BVX4cPLanIZuwwrkVl+lK84E/miEXkCHWXuq65rhNN4rXsBcOB3S4w==
+  dependencies:
+    debug "^4.1.1"
+    globrex "^0.1.2"
+    tsconfck "^3.0.3"
+
 "vite@^5.0.0 || ^6.0.0 || ^7.0.0-0":
   version "6.3.5"
   resolved "https://registry.yarnpkg.com/vite/-/vite-6.3.5.tgz#fec73879013c9c0128c8d284504c6d19410d12a3"
@@ -7899,7 +8023,7 @@ webpack-sources@^3.2.3:
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-3.3.2.tgz#0ab55ab0b380ce53c45ca40cb7b33bab3149ea85"
   integrity sha512-ykKKus8lqlgXX/1WjudpIEjqsafjOTcOJqxnAbMLAu/KCsDCJ6GBtvscewvTkrn24HsnvFwrSCbenFrhtcCsAA==
 
-webpack-virtual-modules@^0.6.0:
+webpack-virtual-modules@^0.6.0, webpack-virtual-modules@^0.6.2:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/webpack-virtual-modules/-/webpack-virtual-modules-0.6.2.tgz#057faa9065c8acf48f24cb57ac0e77739ab9a7e8"
   integrity sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ==
