@@ -1,4 +1,4 @@
-import * as icons from "@/assets/icons/apple.svg";
+import * as icons from "@/assets/icons";
 export const IconMap = {
   ...icons,
 };

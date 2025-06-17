@@ -1,3 +1,4 @@
+import { AppIcon } from "@/components";
 import ThemeSwitch from "@/components/ThemeSwitch";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <div className="text-5xl text-chart-5">
       {t("title")}
-
+      <AppIcon name={"appleIcon"} />
       <ThemeSwitch />
       <Button variant={"destructive"}> as</Button>
       <Input />
