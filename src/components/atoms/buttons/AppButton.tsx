@@ -6,7 +6,7 @@ import { AppIcon, IconMap } from "../icon";
 interface IAppButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   text?: string;
   className?: string;
-  labelClass?: string;
+  textClass?: string;
   disabled?: boolean;
   preIcon?: keyof typeof IconMap;
   suffIcon?: keyof typeof IconMap;
@@ -27,7 +27,7 @@ export const AppButton = ({
   onClick,
   disabled,
   variant,
-  labelClass,
+  textClass,
   preIcon,
   suffIcon,
   preIconClassName,
@@ -49,7 +49,7 @@ export const AppButton = ({
         ) : (
           <>
             {preIcon && <AppIcon className={preIconClassName} name={preIcon} />}
-            <span className={cn("text-base font-semibold", labelClass)}>
+            <span className={cn("text-base font-semibold", textClass)}>
               {text}
             </span>
             {suffIcon && (

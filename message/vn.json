@@ -1,6 +1,10 @@
 {
-  "HomePage": {
-    "title": "ssss",
-    "about": "Go to the about page"
+  "Header": {
+    "home": "Trang chủ",
+    "devices": "Thiết bị",
+    "project": "Dự án",
+    "price": "Báo giá",
+    "contact": "Liên hệ",
+    "login": "Đăng nhập"
   }
 }
