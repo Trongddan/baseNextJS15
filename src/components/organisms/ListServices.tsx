@@ -34,11 +34,18 @@ export const ListServices = () => {
       <Typography type="h2">Danh sách dịch vụ</Typography>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-5">
         {data.map((item, index) => (
-          <article key={index} className="space-y-2">
-            <div className="rounded-3xl overflow-hidden">
+          <article key={index}>
+            <div className="rounded-t-3xl overflow-hidden">
               <AppImage alt={item.name} src={item.img} />
             </div>
-            <Typography type="h5">{item.name}</Typography>
+            <div className="bg-card-foreground rounded-b-3xl px-2 py-3">
+              <Typography
+                className="text-card text-center font-normal"
+                type="h5"
+              >
+                {item.name}
+              </Typography>
+            </div>
           </article>
         ))}
       </div>
